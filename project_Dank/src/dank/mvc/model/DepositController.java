@@ -124,7 +124,7 @@ public class DepositController {
 		psid.setDeptype(deptype);
 		psid.setSav_code(sav_code);
 		psid.setIns_code(ins_code);
-
+		
 		String ac_num = accountNum.createAcNum(deptype);
 		account.setAc_num(ac_num);
 

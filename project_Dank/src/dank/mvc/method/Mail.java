@@ -36,14 +36,14 @@ public class Mail {
 		Session session = Session.getDefaultInstance(props, new Authenticator() {
 			@Override
 			protected PasswordAuthentication getPasswordAuthentication() {
-				return new PasswordAuthentication("jinproject94@naver.com", "wlsgbvmfhwprxm12");
+				return new PasswordAuthentication("gusrldlqslek@naver.com", "dlgusrl12!");
 			}
 		});
 		// 메일 발신자와 수신자, 제목 그리고 내용 작성을 위한 MimeMessage객체 생성
 		MimeMessage message = new MimeMessage(session);
 		try {
 			// 발신자 설정
-			message.setFrom(new InternetAddress("jinproject94@naver.com", "김진휴"));
+			message.setFrom(new InternetAddress("gusrldlqslek@naver.com", "이현기"));
 			// 수신자 설정
 			message.setRecipient(Message.RecipientType.TO, new InternetAddress(RecipientMail, RecipientName));
 			// 제목 설정
